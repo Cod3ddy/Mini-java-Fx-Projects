@@ -1,0 +1,30 @@
+.main-form{
+    -fx-background-color: linear-gradient(to bottom right, rgb(4, 3, 26), rgb(7, 5, 43));
+     -fx-border-radius: 20 20 20 20;
+}
+
+.text-field{
+    -fx-border-color: rgb(27, 26, 81);
+    -fx-border-width: .40px;
+    -fx-background-color: rgb(7, 5, 43);
+    -fx-border-radius: 20 20 20 20;
+    -fx-padding: 20px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+}
+
+.closeBtn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.closeBtn:hover{
+    -fx-background-color: #ee0018;
+}
+
+.generateBtn{
+    -fx-background-color: linear-gradient(to bottom right, rgb(27, 26, 81), rgb(7, 5, 81));
+    -fx-border-width: .50px;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 20px;
+    -fx-cursor: hand;
+}

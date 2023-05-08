@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="main-form" stylesheets="@css/barcode.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shadow.controllers.BarcodeController">
+   <children>
+      <Label layoutX="90.0" layoutY="79.0" prefHeight="20.0" prefWidth="30.0" text="[" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="89.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="79.0" prefHeight="20.0" prefWidth="30.0" text="]" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="89.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="generatedBarcode" fitHeight="97.0" fitWidth="515.0" layoutX="121.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/573000005763.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="barcodeCover" layoutX="23.0" layoutY="65.0" opacity="0.66" prefHeight="130.0" prefWidth="554.0" styleClass="main-form" stylesheets="@css/barcode.css" />
+      <TextField fx:id="barCodeField" alignment="CENTER" layoutX="23.0" layoutY="213.0" prefHeight="43.0" prefWidth="553.0" promptText="enter code" />
+      <Button fx:id="generateBtn" layoutX="197.0" layoutY="329.0" mnemonicParsing="false" onAction="#generateCode" prefHeight="43.0" prefWidth="206.0" styleClass="generateBtn" stylesheets="@css/barcode.css" text="Generate" textFill="WHITE" />
+      <Button fx:id="closeBtn" layoutX="542.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeApplication" prefHeight="43.0" prefWidth="36.0" styleClass="closeBtn" stylesheets="@css/barcode.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/closeBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
