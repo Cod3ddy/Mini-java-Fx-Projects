@@ -1,3 +1,3 @@
-# Shadow-Fx-Projects
+# Java-Fx-Projects
 * a collection of simple javafx projects
 * still in progress
